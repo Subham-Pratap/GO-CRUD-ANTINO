@@ -26,7 +26,7 @@ func main() {
 	dbHost := os.Getenv("DB_HOST")
 	dbPort := os.Getenv("DB_PORT")
 	dbName := os.Getenv("DB_NAME")
-	dsn := "root:iAMGOD@997@tcp(localhost:3306)/myblogdb"
+	dsn := "root:@tcp(localhost:3306)/myblogdb"
 	dsnn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", dbUser, dbPassword, dbHost, dbPort, dbName)
 	fmt.Println(dsnn)
 	var err error

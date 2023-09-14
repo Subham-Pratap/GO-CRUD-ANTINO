@@ -16,7 +16,7 @@ func main() {
 
 	// Initialize routes from the api package
 
-	dsn := "root:iAMGOD@997@tcp(localhost:3306)/myblogdb"
+	dsn := "root:@tcp(localhost:3306)/myblogdb"
 	db := blog.InitializeDB(dsn)
 	defer db.Close()
 
